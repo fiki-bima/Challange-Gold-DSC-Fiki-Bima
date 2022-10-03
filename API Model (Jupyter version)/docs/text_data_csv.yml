@@ -1,0 +1,15 @@
+tags:
+  - Text From CSV Upload
+consumes:
+  - multipart/form-data  
+parameters:
+  - name: file
+    required: false
+    in: formData
+    type: file
+    description: Upload your file.
+responses:
+  500:
+    description: ERROR Failed!
+  200:
+    description: INFO Success!
